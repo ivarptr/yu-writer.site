@@ -1,0 +1,251 @@
+address, article, aside, blockquote, body,
+canvas, dd, div, dl, fieldset, figcaption,
+figure, footer, form, h1, h2, h3, h4, h5, h6,
+header, hgroup, hr, html, li, main, nav,
+noscript, ol, output, p, pre, section, table,
+tfoot, ul, video {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "DejaVu Sans", "Microsoft YaHei", Arial, sans-serif;
+  font-size: 14px;
+  color: #242424;
+  background-color: #fff; }
+
+.header {
+  margin-top: 48px;
+  margin-bottom: 32px;
+  text-align: center;
+  padding: 0 16px; }
+  .header h1 {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+    color: #2b8ffc;
+    font-weight: normal; }
+  .header h2 {
+    font-size: 2.2em;
+    margin-bottom: 8px;
+    font-weight: 200; }
+  .header .intro {
+    font-size: 1.2em;
+    font-weight: 100; }
+
+.screenshot {
+  margin-bottom: 80px;
+  padding: 0 16px; }
+  .screenshot .photo {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px; }
+    .screenshot .photo img {
+      display: block;
+      width: 100%; }
+    .screenshot .photo video {
+      display: block;
+      width: 100%;
+      margin-top: 58px;
+      margin-bottom: 80px; }
+  .screenshot .thumb-list ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .screenshot .thumb-list ul li {
+      width: 64px;
+      height: 46px;
+      margin-left: 6px;
+      margin-right: 6px;
+      margin-bottom: 16px;
+      cursor: pointer; }
+      .screenshot .thumb-list ul li img {
+        opacity: .5;
+        width: 100%;
+        border: 1px solid transparent;
+        transition-property: opacity, border, box-shadow;
+        transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+        transition-duration: .35s, .35s, .35s; }
+      .screenshot .thumb-list ul li.video {
+        position: relative; }
+        .screenshot .thumb-list ul li.video .fa {
+          position: absolute;
+          color: rgba(0, 0, 0, 0.5);
+          display: inline-block;
+          font-size: 2em;
+          width: 28px;
+          height: 28px;
+          top: 50%;
+          left: 50%;
+          margin-left: -14px;
+          margin-top: -14px;
+          text-align: center; }
+      .screenshot .thumb-list ul li.selected img {
+        opacity: 1;
+        border-color: #2b8ffc;
+        border-radius: 4px;
+        box-shadow: 0 0 12px #2b8ffc; }
+
+.feature, .special, .plugin, .download {
+  max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
+  padding: 0 16px; }
+  .feature h2, .special h2, .plugin h2, .download h2 {
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 8px;
+    margin-bottom: 64px;
+    color: #2b8ffc;
+    font-weight: 100; }
+  .feature .sub-title, .special .sub-title, .plugin .sub-title, .download .sub-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+    margin-bottom: 64px; }
+
+.feature ul, .special ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .feature ul li, .special ul li {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 56px;
+    box-sizing: border-box;
+    flex: 0 0 33%; }
+    .feature ul li .frame, .special ul li .frame {
+      max-width: 360px;
+      max-height: 360px;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px; }
+      .feature ul li .frame img, .special ul li .frame img {
+        width: 100%; }
+    .feature ul li h3, .special ul li h3 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 12px;
+      font-weight: 100; }
+    .feature ul li .content, .special ul li .content {
+      padding: 0 16px; }
+
+@media (max-width: 992px) {
+  .feature ul li, .special ul li {
+    flex-basis: 50%; } }
+
+@media (max-width: 767px) {
+  .header .intro {
+    font-size: 1em; }
+  .feature ul li, .special ul li {
+    flex-basis: 100%; } }
+
+.special {
+  margin-bottom: 16px; }
+  .special h2 {
+    margin-bottom: 16px; }
+  .special ul li .frame {
+    text-align: center;
+    margin-bottom: 32px; }
+    .special ul li .frame .fa {
+      display: inline-block;
+      font-size: 72px;
+      color: rgba(0, 0, 0, 0.3);
+      width: 72px;
+      height: 72px; }
+
+.plugin h2 {
+  margin-bottom: 16px; }
+
+.plugin .sub-title {
+  margin-bottom: 24px; }
+
+.plugin .content {
+  text-align: center;
+  margin-bottom: 16px; }
+  .plugin .content ul {
+    list-style-type: none; }
+    .plugin .content ul li {
+      color: #777;
+      margin-bottom: 4px; }
+
+.download ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 16px; }
+  .download ul li {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #1d4f73;
+    width: 110px;
+    height: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: #fff;
+    transition-property: background-color;
+    transition-timing-function: ease;
+    transition-duration: .35s; }
+    .download ul li .fa {
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: 6px;
+      font-size: 20px;
+      width: 20px;
+      height: 20px; }
+    .download ul li .name {
+      margin-left: 40px;
+      margin-top: 10px;
+      margin-right: 24px;
+      font-size: 13px;
+      text-align: center; }
+    .download ul li.windows .fa {
+      font-size: 18px; }
+    .download ul li.rasberrypi img {
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: 6px;
+      width: 20px;
+      height: 20px; }
+    .download ul li.rasberrypi .name {
+      margin-top: 5px;
+      font-size: 11px; }
+    .download ul li.tablet .fa {
+      top: 7px; }
+    .download ul li:hover {
+      background-color: #2c79b0; }
+    .download ul li:active {
+      background-color: #18415f; }
+
+.download .notice {
+  text-align: center;
+  color: #777; }
+
+.footer {
+  margin-bottom: 80px; }
+  .footer h3 {
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    font-weight: normal; }
+  .footer .follow-list {
+    text-align: center; }
+    .footer .follow-list a {
+      color: #1da1f2; }
+      .footer .follow-list a .fa {
+        font-size: 48px; }
+      .footer .follow-list a:hover {
+        color: #0c85d0; }
+      .footer .follow-list a:active {
+        color: red; }

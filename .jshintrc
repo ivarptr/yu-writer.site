@@ -1,0 +1,11 @@
+{
+    "curly": true,
+    "latedef": true,
+    "undef": true,
+    "unused": true,
+    "strict": true,
+    "es5": true,
+    "esnext": true,
+    "browser": true,
+    "node": true
+}

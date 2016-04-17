@@ -1,1 +1,173 @@
-hello
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yu Writer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources/css/font-awesome.css" rel="stylesheet">
+    <link href="resources/css/main.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="header">
+        <h1>Yu Writer</h1>
+        <h2>简单流畅的文本编辑器</h2>
+        <div class="intro">为专业技术人员、博客作者以及热爱写作的你而打造</div>
+    </div>
+    <div class="screenshot">
+        <div class="photo">
+            <img src="resources/images/01-main.jpg">
+        </div>
+        <div class="thumb-list">
+            <ul>
+                <li data-url="01-main.jpg" class="selected"><img src="resources/images/thumb-01-main.jpg"></li>
+                <li data-url="02-theme.jpg"><img src="resources/images/thumb-02-theme.jpg"></li>
+                <li data-url="03-template.jpg"><img src="resources/images/thumb-03-template.jpg"></li>
+                <li data-url="04-media.jpg"><img src="resources/images/thumb-04-media.jpg"></li>
+                <!-- <li data-url="05-settings.jpg"><img src="resources/images/thumb-05-settings.jpg"></li> -->
+                <li data-url="720p.mp4" class="video">
+                    <img src="resources/images/thumb-01-main.jpg">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="feature">
+        <h2>FEATURES</h2>
+        <ul>
+            <li>
+                <div class="frame">
+                    <img src="resources/images/feature/01.jpg">
+                </div>
+                <h3>格式自动转换</h3>
+                <div class="content">从网页复制过来的内容将会自动转换为 Markdown 文本，无需手动修改，
+                    方便资料采集和编写。</div>
+            </li>
+            <li>
+                <div class="frame">
+                    <img src="resources/images/feature/02.jpg">
+                </div>
+                <h3>文档库</h3>
+                <div class="content">内置了功能完善的文档库，集中统一地管理文档。
+                    文档库具有自动保存功能，你可以随时关闭、打开应用，随时继续编辑，每次修改都有历史记录。</div>
+            </li>
+            <li>
+                <div class="frame">
+                    <img src="resources/images/feature/04.jpg">
+                </div>
+                <h3>照片管理</h3>
+                <div class="content">只需把照片拖入文档，应用就会自动把照片缩放到合适的大小并插入到文档，
+                    同时还会自动生成一份适合 Retina（HiDPI）屏幕观看的版本。
+                </div>
+            </li>
+            <li>
+                <div class="frame">
+                    <img src="resources/images/feature/05.jpg">
+                </div>
+                <h3>文档模版</h3>
+                <div class="content">内置了包括技术文档、电子书、博客文章等几种不同样式的模版，可以生成专业、美观的 PDF 文档。</div>
+            </li>
+            <li>
+                <div class="frame">
+                    <img src="resources/images/feature/06.jpg">
+                </div>
+                <h3>外观和录入模式</h3>
+                <div class="content">内置 4 种界面主题以及 5 种录入模式，从视觉和功能上提升写作体验。</div>
+            </li>
+            <li>
+                <div class="frame">
+                    <img src="resources/images/feature/07.jpg">
+                </div>
+                <h3>实时预览</h3>
+                <div class="content">可以实时预览文档的格式和排版，可以调整预览区的宽度和缩放比率，
+                    还可以拖拉浮块来快速定位文档位置。</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="special">
+        <h2>FOR WRITERS</h2>
+        <div class="sub-title">为重度写作用户特别准备的功能 😱</div>
+        <ul>
+            <li>
+                <div class="frame">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </div>
+                <h3>一键发布</h3>
+                <div class="content">写好的文章准备发布了？现在只需点击一下就可以自动发布到 Wordpress，文章标题、自定义URL、
+                照片上传等等应用全部自动帮你搞定。</div>
+            </li>
+            <li>
+                <div class="frame">
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                </div>
+                <h3>文档大纲</h3>
+                <div class="content">实时生成文档的大纲，当文档很长时，通过大纲可以快速定位到你所需要的位置。</div>
+            </li>
+            <li>
+                <div class="frame">
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                </div>
+                <h3>自动同步</h3>
+                <div class="content">
+                    文档库可以通过 Dropbox、OneDrive、Google Drive 等或者 Git 同步到你的所有设备。</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="plugin">
+        <h2>PLUGINS</h2>
+        <div class="sub-title">通过插件可以扩充应用的功能，应用内置了如下几个插件：</div>
+        <div class="content">
+            <ul>
+                <li>编辑时间、录入时间及字数统计 Statistics</li>
+                <li>每录入一个字都会有爆炸效果的 Power Mode</li>
+                <li>每敲一个键都会发出噼噼啪啦声音的 Typewriter</li>
+                <li>离开编辑器几分钟就会提示你赶快继续码字的 Focuse</li>
+                <li>为古怪人士而设的 Vim Mode</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="download">
+        <h2>Download</h2>
+        <ul>
+            <li>
+                <i class="fa fa-linux" aria-hidden="true"></i>
+                <div class="name">Linux</div>
+            </li>
+            <li>
+                <i class="fa fa-apple" aria-hidden="true"></i>
+                <div class="name">Mac</div>
+            </li>
+            <li class="windows">
+                <i class="fa fa-windows" aria-hidden="true"></i>
+                <div class="name">Windows</div>
+            </li>
+            <li class="rasberrypi">
+                <img src="resources/images/raspberrypi-r.png">
+                <div class="name">Raspberry Pi</div>
+            </li>
+            <li class="tablet">
+                <i class="fa fa-tablet" aria-hidden="true"></i>
+                <div class="name">iPad</div>
+            </li>
+        </ul>
+
+        <div class="notice">诶～为什么下载不了的？！！🤔 因为还没做完呢～ 😅</div>
+    </div>
+
+    <div class="footer">
+        <h3>Follow</h3>
+        <div class="follow-list">
+            <a href="https://twitter.com/ivarptr">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <script src="resources/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+#!/bin/bash
+PERCENT=66
+for img in *.png; do
+    filename=${img%.*}
+    convert -resize $PERCENT%x$PERCENT% -quality 90 -background white -alpha remove "$filename.png" "$filename.jpg"
+done
