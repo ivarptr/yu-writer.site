@@ -98,7 +98,8 @@ a {
 
     .intro {
         font-size: 1.1em;
-        font-weight: 200;
+        //font-weight: 300;
+        color: rgba(255, 255, 255, .75);
     }
 }
 
@@ -651,6 +652,11 @@ section.special {
 
     .feature-style .screenshot ul {
         justify-content: center;
+
+        li {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
     }
 
     .feature-plugin .screenshot ul {
