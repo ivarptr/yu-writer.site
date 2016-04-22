@@ -66,8 +66,8 @@
         //<link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
 
         var linkElement = document.createElement('link');
-        linkElement.setAttribute('href', 'https://fonts.googleapis.com/css?family=Raleway:400,100');
-        //linkElement.setAttribute('href', 'https://fonts.googleapis.com/css?family=Lato:400,100');
+        linkElement.setAttribute('href', 'https://fonts.googleapis.com/css?family=Raleway');
+        //linkElement.setAttribute('href', 'https://fonts.googleapis.com/css?family=Lato:400,200');
         linkElement.setAttribute('rel', 'stylesheet');
         linkElement.setAttribute('type', 'text/css');
 

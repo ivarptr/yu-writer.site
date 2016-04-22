@@ -24,7 +24,6 @@ tfoot, ul, video {
     padding: 0;
 }
 
-
 body {
     font-family: $defaultFontFamily;
     font-size: $defaultFontSize;
@@ -94,12 +93,12 @@ a {
     h2 {
         font-size: 2em;
         margin-bottom: 8px;
-        font-weight: 200;
+        font-weight: 300;
     }
 
     .intro {
         font-size: 1.1em;
-        font-weight: 100;
+        font-weight: 200;
     }
 }
 
@@ -110,12 +109,12 @@ a {
     .content {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 32px;
+        margin-bottom: 48px;
 
         max-width: 960px;
-        line-height: 1.6;
+        line-height: 1.8;
         color: #999;
-        font-weight: 200;
+        // font-weight: 200;
         font-size: 1.1em;
 
         a {
@@ -132,7 +131,7 @@ a {
             position: relative;
             width: 160px;
             height: 40px;
-            margin-bottom: 16px;
+            margin-bottom: 32px;
             border-radius: 4px;
             background-color: $subTitleColor;
             color: $defaultBackgroundColor;
@@ -170,7 +169,7 @@ a {
         .hint {
             color: #aaa;
             font-size: .9em;
-            font-weight: 200;
+            // font-weight: 200;
         }
     }
 
@@ -210,17 +209,17 @@ a {
             }
 
             p {
-                font-weight: 200;
-                margin-bottom: 8px;
+                // font-weight: 200;
+                margin-bottom: 12px;
             }
 
             ul {
                 list-style-type: none;
 
                 li {
-                    font-weight: 200;
-                    margin-bottom: 8px;
-                    color: #aaa;
+                    // font-weight: 200;
+                    margin-bottom: 12px;
+                    color: #999;
 
                     strong {
                         color: $defaultFontColor;
@@ -294,7 +293,7 @@ a {
 
                 .title {
                     font-size: .8em;
-                    font-weight: normal;
+                    // font-weight: normal;
                 }
             }
 
@@ -322,25 +321,27 @@ a {
 }
 
 .feature-plugin {
+    display: none;
 
     .screenshot {
         ul {
             list-style-type: none;
             padding: 16px 0;
+            margin-right: 48px;
 
             li {
                 position: relative;
                 box-sizing: border-box;
                 width: 100%;
-                max-width: 360px;
-                height: 48px;
-                background-color: lighten($titleColor, 15%);
+                //max-width: 360px;
+                height: 40px;
+                background-color: $titleColor;
                 color: $defaultBackgroundColor;
                 //color: rgba(0,0,0,.5);
                 border-radius: 4px;
 
                 display: block;
-                margin-bottom: 16px;
+                margin-bottom: 8px;
 
                 padding: 8px;
 
@@ -350,13 +351,13 @@ a {
                     font-size: 32px;
                     width: 32px;
                     height: 32px;
-                    top: 8px;
+                    top: 4px;
                     left: 16px;
                 }
 
                 .title {
                     margin-left: 56px;
-                    margin-top: 6px;
+                    margin-top: 2px;
                 }
             }
         }
@@ -377,14 +378,14 @@ section {
         letter-spacing: 8px;
         margin-bottom: 16px;
         color: $titleColor;
-        font-weight: 100;
+        font-weight: 400;
         font-family: 'Raleway', $defaultFontFamily;
     }
 
     .sub-title {
         text-align: center;
         font-size: 1.2em;
-        font-weight: 100;
+        font-weight: 300;
         margin-bottom: 64px;
     }
 }
@@ -547,7 +548,7 @@ section.special {
         font-size: 1.5em;
         letter-spacing: 2px;
         margin-bottom: 8px;
-        font-weight: 100;
+        font-weight: 400;
         color: $titleColor;
     }
 
@@ -590,7 +591,7 @@ section.special {
                 font-size: 36px;
                 width: 36px;
                 height: 36px;
-                margin: 4px auto 4px;
+                margin: 4px auto 8px;
             }
         }
     }
@@ -606,8 +607,11 @@ section.special {
 }
 
 @media (max-width: 767px) {
-    .header .wall .logo {
-        zoom: .8;
+
+    .header {
+        .wall .logo {
+            zoom: .8;
+        }
     }
 
     body {
@@ -649,21 +653,23 @@ section.special {
         justify-content: center;
     }
 
-    .feature-plugin .screenshot ul li {
-        max-width: none;
-        height: 32px;
-        margin-bottom: 8px;
+    .feature-plugin .screenshot ul {
+        margin-right: 0;
 
-        .fa {
-            font-size: 16px;
-            width: 16px;
-            height: 16px;
-            top: 8px;
-            left: 16px;
-        }
+        li {
+            height: 32px;
 
-        .title {
-            margin-top: 0;
+            .fa {
+                font-size: 16px;
+                width: 16px;
+                height: 16px;
+                top: 8px;
+                left: 16px;
+            }
+
+            .title {
+                margin-top: 0;
+            }
         }
     }
 
