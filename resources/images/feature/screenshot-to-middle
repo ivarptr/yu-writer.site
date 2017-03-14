@@ -1,5 +1,0 @@
-#!/bin/bash
-for img in *.png; do
-    filename=${img%.*}
-    convert -background white -alpha remove -quality 92 -unsharp 0x2 -resize "1280x" "$filename.png" "$filename.jpg"
-done

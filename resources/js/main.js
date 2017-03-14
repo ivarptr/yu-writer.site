@@ -2,110 +2,199 @@
 
 (function() {
 
-    function showScreenVideo(src) {
-        var videoElement = document.querySelector('.screenshot .photo video');
-        if (videoElement !== null) {
-            videoElement.style.display = 'block';
-        }else {
-            videoElement = document.createElement('VIDEO');
-            var parentElement = document.querySelector('.screenshot .photo');
-            parentElement.appendChild(videoElement);
+	var maskElement = document.querySelector('.mask');
+	var fullscreen = false;
+	var fullscreenElement = null;
 
-            // see also
-            // https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
-            // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
-            videoElement.setAttribute('controls', '');
-            videoElement.setAttribute('src', src);
-            //videoElement.load();
-        }
+    // function showScreenVideo(src) {
+    //     var videoElement = document.querySelector('.screenshot .photo video');
+    //     if (videoElement !== null) {
+    //         videoElement.style.display = 'block';
+    //     }else {
+    //         videoElement = document.createElement('VIDEO');
+    //         var parentElement = document.querySelector('.screenshot .photo');
+    //         parentElement.appendChild(videoElement);
 
-        videoElement.play();
+    //         // see also
+    //         // https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
+    //         // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+    //         videoElement.setAttribute('controls', '');
+    //         videoElement.setAttribute('src', src);
+    //         //videoElement.load();
+    //     }
 
-        var imageElement = document.querySelector('.screenshot .photo img');
-        imageElement.style.display = 'none';
-    }
+    //     videoElement.play();
 
-    function showScreenshot(src) {
-        var imageElement = document.querySelector('.screenshot .photo img');
-        imageElement.style.display = 'block';
-        imageElement.setAttribute('src', src);
+    //     var imageElement = document.querySelector('.screenshot .photo img');
+    //     imageElement.style.display = 'none';
+    // }
 
-        var videoElement = document.querySelector('.screenshot .photo video');
-        if (videoElement !== null) {
-            // see also
-            // https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
-            videoElement.pause();
-            videoElement.style.display = 'none';
-        }
-    }
+    // function showScreenshot(src) {
+    //     var imageElement = document.querySelector('.screenshot .photo img');
+    //     imageElement.style.display = 'block';
+    //     imageElement.setAttribute('src', src);
 
-    function thumbClick(item) {
-        var thumbListElement = document.querySelector('.thumb-list');
-        var thumbElementList = thumbListElement.querySelectorAll('ul > li');
-        var thumbElements = Array.prototype.slice.call(thumbElementList, 0);
+    //     var videoElement = document.querySelector('.screenshot .photo video');
+    //     if (videoElement !== null) {
+    //         // see also
+    //         // https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
+    //         videoElement.pause();
+    //         videoElement.style.display = 'none';
+    //     }
+    // }
 
-        for (var idx in thumbElements) {
-            var thumbElement = thumbElements[idx];
-            if (item !== thumbElement && thumbElement.classList.contains('selected')) {
-                thumbElement.classList.remove('selected');
-            }
-        }
+    // function thumbClick(item) {
+    //     var thumbListElement = document.querySelector('.thumb-list');
+    //     var thumbElementList = thumbListElement.querySelectorAll('ul > li');
+    //     var thumbElements = Array.prototype.slice.call(thumbElementList, 0);
 
-        item.classList.add('selected');
+    //     for (var idx in thumbElements) {
+    //         var thumbElement = thumbElements[idx];
+    //         if (item !== thumbElement && thumbElement.classList.contains('selected')) {
+    //             thumbElement.classList.remove('selected');
+    //         }
+    //     }
 
-        if (item.classList.contains('video')) {
-            var videoSrc = 'resources/media/' + item.dataset.url;
-            showScreenVideo(videoSrc);
-        }else {
-            var imageSrc = 'resources/images/' + item.dataset.url;
-            showScreenshot(imageSrc);
-        }
-    }
+    //     item.classList.add('selected');
 
-    function loadWebFonts(){
-        //<link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+    //     if (item.classList.contains('video')) {
+    //         var videoSrc = 'resources/media/' + item.dataset.url;
+    //         showScreenVideo(videoSrc);
+    //     }else {
+    //         var imageSrc = 'resources/images/' + item.dataset.url;
+    //         showScreenshot(imageSrc);
+    //     }
+    // }
 
-        var linkElement = document.createElement('link');
-        linkElement.setAttribute('href', 'https://fonts.googleapis.com/css?family=Raleway');
-        //linkElement.setAttribute('href', 'https://fonts.googleapis.com/css?family=Lato:400,200');
-        linkElement.setAttribute('rel', 'stylesheet');
-        linkElement.setAttribute('type', 'text/css');
+    // function loadWebFonts(){
+    //     //<link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
 
-        var headElement = document.querySelector('head');
-        headElement.appendChild(linkElement);
+    //     var linkElement = document.createElement('link');
+    //     linkElement.setAttribute('href', 'https://fonts.googleapis.com/css?family=Raleway');
+    //     //linkElement.setAttribute('href', 'https://fonts.googleapis.com/css?family=Lato:400,200');
+    //     linkElement.setAttribute('rel', 'stylesheet');
+    //     linkElement.setAttribute('type', 'text/css');
 
-        // window.WebFontConfig = {
-        //     google: { families: [ 'Raleway:400,100:latin' ] }
-        // };
-        //
-        // var scriptElement = document.createElement('script');
-        // scriptElement.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        // scriptElement.type = 'text/javascript';
-        // scriptElement.async = 'true';
-        // var existScriptElement = document.getElementsByTagName('script')[0];
-        // existScriptElement.parentNode.insertBefore(scriptElement, existScriptElement);
-    }
+    //     var headElement = document.querySelector('head');
+    //     headElement.appendChild(linkElement);
+
+    //     // window.WebFontConfig = {
+    //     //     google: { families: [ 'Raleway:400,100:latin' ] }
+    //     // };
+    //     //
+    //     // var scriptElement = document.createElement('script');
+    //     // scriptElement.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    //     // scriptElement.type = 'text/javascript';
+    //     // scriptElement.async = 'true';
+    //     // var existScriptElement = document.getElementsByTagName('script')[0];
+    //     // existScriptElement.parentNode.insertBefore(scriptElement, existScriptElement);
+    // }
+
+	function thumbClick(element, event) {
+		if (fullscreen) {
+			return;
+		}
+
+		fullscreen = true;
+		fullscreenElement = element;
+		event.preventDefault();
+		event.stopPropagation();
+
+		var rect = element.getClientRects()[0];
+		
+		var elementWidth = rect.width;
+		var elementHeight = rect.height;
+
+		var windowWidth = window.innerWidth;
+		var windowHeight = window.innerHeight;
+
+		var src = element.getAttribute('src');
+		var hd = (src.indexOf('@2x') > 0);
+		var image = new Image();
+		image.src = src;
+
+		var imageWidth = image.width;
+		var imageHeight = image.height;
+
+		if (hd) {
+			imageWidth /= 2;
+			imageHeight /= 2;
+		}
+
+		var zoomX = imageWidth / elementWidth;
+		var zoomY = imageHeight / elementHeight;
+
+		var zoom = Math.min(zoomX, zoomY);
+
+		var left = (windowWidth - elementWidth) / 2;
+		var top = (windowHeight - elementHeight) / 2;
+
+		var offsetX = left - rect.left;
+		var offsetY = top - rect.top;
+
+		// center element first and then scale it.
+		// var transform = 'translate(' + offsetX + 'px,' + offsetY + 'px)';
+		// var transform = 'scale(' + zoom + ',' + zoom + ')';
+		var transform = 'translate(' + offsetX + 'px,' + offsetY + 'px) scale(' + zoom + ',' + zoom + ')';
+
+		//maskElement.style.display = 'block';
+		element.parentNode.classList.remove('animate');
+		element.classList.add('fullscreen');
+		element.style.zIndex = 99;
+		element.style.transform = transform;
+
+		if (!hd) {
+			var dot = src.indexOf('.png');
+			var hdSrc = src.substring(0, dot) + '@2x' + src.substring(dot);
+			var hdImage = new Image();
+			hdImage.addEventListener('load', function(){
+				element.setAttribute('src', hdSrc);
+			});
+
+			hdImage.src = hdSrc;
+		}
+
+	}
 
     function bindEvents() {
-        var thumbListElement = document.querySelector('.thumb-list');
-        var thumbElementList = thumbListElement.querySelectorAll('ul > li');
+        var thumbElementList = document.querySelectorAll('.screenshot img.large');
         var thumbElements = Array.prototype.slice.call(thumbElementList, 0);
 
         for (var idx in thumbElements) {
-            thumbElements[idx].addEventListener('click', function(event) {
-                thumbClick(event.currentTarget);
+			let thumbElement = thumbElements[idx];
+
+            thumbElement.addEventListener('click', function(event) {
+                thumbClick(event.currentTarget, event);
             });
+
+			thumbElement.addEventListener('transitionend', function() {
+				if (!thumbElement.classList.contains('fullscreen')) {
+					thumbElement.style.zIndex = '';
+					thumbElement.parentNode.classList.add('animate');
+				}
+			});
         }
+
+		window.addEventListener('click', function(event){
+			if (fullscreen) {
+				event.preventDefault();
+
+				fullscreenElement.style.transform = '';
+				fullscreenElement.classList.remove('fullscreen');
+				// fullscreenElement.style.zIndex = '';
+				// maskElement.style.display = 'none';
+
+				fullscreen = false;
+			}
+		});
+
+
     }
 
-    function init() {
-        // load web fonts
-        loadWebFonts();
+	// load web fonts
+	// loadWebFonts();
 
-        // bing events
-        bindEvents();
-    }
+	// bing events
+	bindEvents();
 
-    // start
-    init();
 })();

@@ -1,5 +1,0 @@
-#!/bin/bash
-for img in *.png; do
-    filename=${img%.*}
-    convert -background white -alpha remove -quality 98 -unsharp 2x0.5+0.7+0 -resize "200x" "$filename.png" "thumb-$filename.jpg"
-done

@@ -13,112 +13,178 @@
 <body class="">
     <div class="header">
         <div class="wall">
-            <div class="logo">
-                <span class="y">Y</span>
-                <span class="u">⏝</span>
-            </div>
+			<a href="index.html">
+				<div class="logo">
+					<span class="y">Y</span>
+					<span class="u">⏝</span>
+				</div>
+			</a>
         </div>
         <h1>Yu Writer</h1>
-        <h2>简洁流畅的文本编辑器</h2>
-        <div class="intro">为专业技术人员、博客作者以及热爱写作的你而打造</div>
+        <h2>一款能为你找到写作乐趣的文本编辑器</h2>
+        <div class="intro">致力为你营造一个舒适、专注、高效的写作环境</div>
     </div>
 
-    <div class="glance">
+    <section class="download">
         <div class="content">
-            <strong>Yu Writer</strong> 是一款支持 <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a> 格式的文本编辑器，
-            支持图文混排、表格、图表、数学公式等格式，
-            可用于编辑博客文章、技术文档、办公、电子书籍及学术等文档。
-            Yu Writer 致力改善写作体验，为你带来写作的乐趣。
         </div>
         <div class="action">
-            <a href="resources/media/720p.mp4" target="_blank">
-                <div class="play">
-                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
-                    <div class="title">DEMO</div>
+            <a href="download.html">
+                <div class="button">
+                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                    <div class="title">Download</div>
                 </div>
             </a>
             <div class="hint">
-                点击播放上面的演示视频了解 Yu Writer 的基本功能
+                Yu Writer 支持 Linux, macOS, Windows 等平台以及 Raspberry Pi
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="feature feature-library">
-        <div class="screenshot">
-            <img src="resources/images/feature/01-library.jpg">
+    <div class="feature">
+        <div class="screenshot gallery gallery4 animate">
+			<img class="" src="resources/images/screenshot/output/screenshot-empty.png">
+            <img class="large galleryimg img1of4" src="resources/images/screenshot/output/theme1.png">
+			<img class="large galleryimg img2of4" src="resources/images/screenshot/output/theme2.png">
+			<img class="large galleryimg img3of4" src="resources/images/screenshot/output/theme3.png">
+			<img class="large galleryimg img4of4" src="resources/images/screenshot/output/theme4.png">
         </div>
         <div class="content">
             <div class="frame">
-                <h2>文档库</h2>
+                <h2>多款主题、可定制的界面</h2>
                 <div class="detail">
-                    <p>Yu Editor 使用内置的文档库集中统一地管理文档，以后再也不需要手忙脚乱到处寻找待编辑的文档了。</p>
-                    <ul>
-                        <li><strong>自动保存</strong> 文档会自动保存，你可以随时关闭应用，然后随时打开并继续编辑之前的文档。</li>
-                        <li><strong>历史记录</strong> 文档的每次修改都有历史记录，你可以随时对比查看、回滚到之前的任一版本。</li>
-                        <li><strong>多设备同步</strong> 文档库可以建立在 Dropbox、OneDrive、Google Drive、Git 等文件夹之上，通过它们把文档同步到你的所有设备。</li>
-                    </ul>
+                    简洁的界面之下，蕴藏着丰富的功能。
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="feature feature-media right">
+    <div class="feature right">
         <div class="screenshot">
-            <img src="resources/images/feature/02-media.jpg">
+            <img class="large" src="resources/images/screenshot/output/library.png">
         </div>
         <div class="content">
             <div class="frame">
-                <h2>图片与素材</h2>
+                <h2>所有文档都在一个地方</h2>
                 <div class="detail">
-                    <ul>
-                        <li><strong>拖拽插入图片</strong> 只需把照片拖入文档，应用就会自动把照片缩放到合适的大小并插入到文档，
-                            同时还会自动生成一份适合 Retina（HiDPI）屏幕观看的版本。</li>
-                        <li><strong>文档媒体库</strong> 每个文档均有独立的媒体库，在媒体库里可以集中地管理文档附带的图片、视频、音频等素材。</li>
-                        <li><strong>导出</strong> 导出文档时可以连同素材一并打包。</li>
-                    </ul>
+                    你的所有创作都在内置的文档库里，需要编辑时再也不用到处寻找然后再打开。另外还支持使用 Tag（标签）方式管理文档。
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="feature feature-outline">
+    <div class="feature">
         <div class="screenshot">
-            <img src="resources/images/feature/03-outline.jpg">
+            <img class="large" src="resources/images/screenshot/output/hotsave.png">
         </div>
         <div class="content">
             <div class="frame">
-                <h2>实时大纲及实时预览</h2>
+                <h2>文档热保存、自动还原工作现场</h2>
                 <div class="detail">
-                    <ul>
-                        <li><strong>实时文档大纲</strong> 通过大纲可以方便地把握整篇文档的结构，并且可以快速定位到你所需要的文档位置。 </li>
-                        <li><strong>大纲可编辑</strong> 可以移动大纲节点以调节段落的顺序及层次关系，在大纲上的修改会同时作用到文档。</li>
-                        <li><strong>实时预览</strong> Markdown 语法生成的格式和排版结果一目了然。</li>
-                        <li><strong>预览缩放比率</strong> 可以调整预览的宽度，以不同的缩放比率查看预览。</li>
-                        <li><strong>预览定位</strong> 可以拖动预览上面的浮块来快速定位文档位置。</li>
-                    </ul>
+                    你可以随时打开应用开始写作，也可以随时关闭应用，文档是热保存的，再也不会因为忘记手动保存或者程序奔溃而丢失数据。每次打开应用时还会自动还原上次编辑时的文档以及光标位置，方便继续书写。
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="feature feature-style right">
+    <div class="feature right">
+        <div class="screenshot">
+            <img class="large" src="resources/images/screenshot/output/history.png">
+        </div>
+        <div class="content">
+            <div class="frame">
+                <h2>日志式版本记录</h2>
+                <div class="detail">
+					文档的编辑过程（包括文字的录入和删除）将会自动记录下来，真正可以做到回滚到历史上任意版本、任一时刻。还支持重播创作过程哦。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="screenshot">
+            <img src="resources/images/screenshot/output/export.png">
+        </div>
+        <div class="content">
+            <div class="frame">
+                <h2>导出高质量的文档、电子书</h2>
+                <div class="detail">
+                   可以把文档导出为 PDF、博客 HTML、图片等，并可选择不同的样式以渲染成不同的风格。还支持导出为微信公众号文章格式和 EPUB 格式的电子书。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature right">
+        <div class="screenshot">
+            <img class="large" src="resources/images/screenshot/output/sync.png">
+        </div>
+        <div class="content">
+            <div class="frame">
+                <h2>文档库可以跟 WordPress 和 GitHub Pages 同步</h2>
+                <div class="detail">
+                    以后书写、编辑、发布文章都能在本应用内轻松方便地完成，管理本地的文档就是管理博客。
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="feature">
+        <div class="screenshot">
+            <img class="large" src="resources/images/screenshot/output/outline.png">
+        </div>
+        <div class="content">
+            <div class="frame">
+                <h2>可编辑的大纲视图，轻松组织超长篇幅的文档</h2>
+                <div class="detail">
+                   段落的定位、顺序调整、层次结构调整、删除，都能在大纲视图里完成。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature right">
+        <div class="screenshot">
+            <img class="large" src="resources/images/screenshot/output/multitab.png">
+        </div>
+        <div class="content">
+            <div class="frame">
+                <h2>多标签、多窗口并行编辑，轻松应对重度写作任务</h2>
+                <div class="detail">
+                    多标签页可轻松切换多个文档，多窗口并行编辑可方便文档内的参照和引用。每个文档的编辑会实时同步到其他窗口而不用担心相互覆盖问题。
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="feature">
+        <div class="screenshot">
+            <img class="large" src="resources/images/screenshot/output/link.png">
+        </div>
+        <div class="content">
+            <div class="frame">
+                <h2>文档间的链接跳转</h2>
+                <div class="detail">
+                   无论在编辑状态下还是阅读模式，均支持文档间和段落间的链接跳转，编辑多章节的文档、博客或者电子书将会变得轻松简单。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature feature-more right">
         <div class="screenshot">
             <ul>
                 <li>
-                    <i class="fa fa-picture-o" aria-hidden="true"></i>
-                    <div class="title">图文混排</div>
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                    <div class="title">格式自动转换</div>
                 </li>
                 <li>
                     <i class="fa fa-table" aria-hidden="true"></i>
-                    <div class="title">可交互的表格</div>
+                    <div class="title">可编辑表格</div>
                 </li>
                 <li>
-                    <i class="fa fa-pie-chart" aria-hidden="true"></i>
-                    <div class="title">图表</div>
-                </li>
-                <li>
-                    <i class="fa fa-hashtag" aria-hidden="true"></i>
-                    <div class="title">题注的自动编号</div>
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    <div class="title">自动缩放图片</div>
                 </li>
                 <li>
                     <i class="fa fa-list-ol" aria-hidden="true"></i>
@@ -126,166 +192,54 @@
                 </li>
                 <li>
                     <i class="fa fa-superscript" aria-hidden="true"></i>
-                    <div class="title">LaTeX 数学公式</div>
+                    <div class="title">自动脚注</div>
+                </li>
+                <li>
+                    <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                    <div class="title">手势操作</div>
+                </li>
+				<li>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <div class="title">即时预览</div>
                 </li>
             </ul>
         </div>
         <div class="content">
             <div class="frame">
-                <h2>格式支持</h2>
+                <h2>更多贴心的功能</h2>
                 <div class="detail">
-                    <p>Yu Writer 支持大部分 Markdown语法，除此之外还支持更多格式以满足更多类型文档的需求，例如：</p>
-                    <ul>
-                        <li><strong>图文混排</strong> 图片可以设置居左、居右、居中等对齐方式，可以设置大中小 3 中不同大小。</li>
-                        <li><strong>图表</strong> 支持办公文档常见的饼型图和柱状图等图表。</li>
-                        <li><strong>自动目录（TOC）</strong> 支持自动生成文档的目录。</li>
-                        <li><strong>自动编号</strong> 支持自动生成图片、表格、图表的题注当中的编号。</li>
-                    </ul>
+                    比如从网页复制过来的内容会自动转换格式、支持多种缩放级别的即时预览等等，欢迎在使用过程中慢慢发掘和体会。
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="feature feature-template">
-        <div class="screenshot">
-            <img src="resources/images/feature/04-template.jpg">
-        </div>
-        <div class="content">
-            <div class="frame">
-                <h2>模版</h2>
-                <div class="detail">
-                    <p>虽然使用 Markdown 不能随意改变文字或段落的字体、大小、颜色等格式。
-                        但通过模版可以生成符合不同类型文档所需要的样式。</p>
-                    <p>没有调整文字和段落格式的繁杂工具，还可以让你更专注于书写内容而不是频繁地调整格式。</p>
-                    <p>Yu Writer 内置了涵盖博客文章、技术文档、办公、电子书籍出版物、学术文档等模版，
-                        可以生成整洁而专业的文档。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="feature feature-setting right">
-        <div class="screenshot">
-            <img src="resources/images/feature/05-settings.jpg">
-        </div>
-        <div class="content">
-            <div class="frame">
-                <h2>主题及录入模式</h2>
-                <div class="detail">
-                    <ul>
-                        <li><strong>界面主题</strong> Yu Writer 提供几种界面主题，以营造适合你书写时喜欢的环境。</li>
-                        <li><strong>录入模式</strong> 另外还提供几种录入模式以从细微之处改善写作体验，比如 Nature 模式可以让输入光标停留在
-                            屏幕中间偏下的地方，而不是屏幕底端。Thinking 模式则会把除了正在录入的几行文字以外的
-                        内容颜色变淡。</li>
-                        <li><strong>可定制界面</strong> 界面的每个部分都是可以设置为隐藏的，比如工具栏以及实时预览，以符合你的书写习惯。</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="feature feature-plugin">
-        <div class="screenshot">
-            <ul>
-                <li>
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <div class="title">Statistics</div>
-                </li>
-                <li>
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <div class="title">Power Mode</div>
-                </li>
-                <li>
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <div class="title">Typewriter</div>
-                </li>
-                <li>
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <div class="title">Focus</div>
-                </li>
-            </ul>
-        </div>
-        <div class="content">
-            <div class="frame">
-                <h2>插件</h2>
-                <div class="detail">
-                    <p>通过插件可以扩充应用的功能，应用内置了几个插件，比如可以统计编辑时间、录入时间及字数的
-                    Statistics，为文字录入增添视觉和声音效果的 Power Mode 和 Typewriter 等。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="special">
-        <h2>For Writers</h2>
-        <div class="sub-title">为重度写作用户特别准备的功能</div>
-        <ul>
-            <li>
-                <div class="frame">
-                    <i class="fa fa-file-text" aria-hidden="true"></i>
-                </div>
-                <h3>格式自动转换</h3>
-                <div class="content">从网页复制过来的内容将会自动转换为 Markdown 文本，无需先粘贴为纯文本或者 HTML 文本再手动修改，
-                    方便资料采集和编写。
-                </div>
-            </li>
-            <li>
-                <div class="frame">
-                    <i class="fa fa-th-large" aria-hidden="true"></i>
-                </div>
-                <h3>并行修改</h3>
-                <div class="content">
-                    可以在两个或多个应用窗口中编辑同一份文档，在不同窗口中编辑文档的不同部分，
-                    所做的修改均会即时同步到其他窗口，
-                    并且每个应用窗口的编辑操作都是相互独立的，配合屏幕分屏或者多显示器，可以很方便地编辑长篇的文档。
-                </div>
-            </li>
-            <li>
-                <div class="frame">
-                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                </div>
-                <h3>一键发布</h3>
-                <div class="content">写好的文章准备发布了？现在只需一次点击就可以自动发布到 Wordpress，
-                连同照片上传等操作，应用自动帮你完成。</div>
-            </li>
-        </ul>
-    </section>
 
     <section class="download">
-        <h2>Download</h2>
-        <ul>
-            <li>
-                <i class="fa fa-linux" aria-hidden="true"></i>
-                <div class="name">Linux</div>
-            </li>
-            <li>
-                <i class="fa fa-apple" aria-hidden="true"></i>
-                <div class="name">Mac</div>
-            </li>
-            <li class="windows">
-                <i class="fa fa-windows" aria-hidden="true"></i>
-                <div class="name">Windows</div>
-            </li>
-            <li class="rasberrypi">
-                <img src="resources/images/raspberrypi-r.png">
-                <div class="name">Raspberry Pi</div>
-            </li>
-            <li class="tablet">
-                <i class="fa fa-tablet" aria-hidden="true"></i>
-                <div class="name">iPad</div>
-            </li>
-        </ul>
-        <div class="notice">还没做完诶～没得下载～ 😅</div>
+        <div class="content">
+        </div>
+        <div class="action">
+            <a href="download.html">
+                <div class="button">
+                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                    <div class="title">Download</div>
+                </div>
+            </a>
+            <div class="hint">
+                现在就开始免费下载吧！
+            </div>
+        </div>
     </section>
 
-    <div class="footer">
-        <h3>Follow</h3>
-        <div class="follow-list">
-            <a href="https://twitter.com/ivarptr">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-        </div>
-    </div>
+	<div class="footer">
+		<ul class="link">
+			<li><a href="index.html">home</a></li>
+			<li><a href="download.html">download</a></li>
+			<li><a href="about.html">about</a></li>
+		</ul>
+
+		<div class="bar">
+		</div>
+	</div>
 
     <script src="resources/js/main.js"></script>
 </body>
