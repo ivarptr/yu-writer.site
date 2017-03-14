@@ -1,11 +1,16 @@
 {
-    "curly": true,
-    "latedef": true,
-    "undef": true,
-    "unused": true,
-    "strict": true,
-    "es5": true,
-    "esnext": true,
-    "browser": true,
-    "node": true
+	"bitwise": true,
+	"curly": true,
+	"eqeqeq": true,
+	"freeze": true,
+	"globals": true,
+	"latedef": true,
+	"undef": true,
+	"unused": true,
+	"varstmt": true,
+
+	"esversion": 6,
+
+	"browser": true,
+	"node": true
 }

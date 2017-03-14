@@ -59,12 +59,12 @@ a {
     font-size: 1.1em;
     color: rgba(255, 255, 255, 0.75); }
 
-section.download {
+.download-button {
   padding: 0 16px;
   margin-bottom: 88px; }
-  section.download .action {
+  .download-button .action {
     text-align: center; }
-    section.download .action .button {
+    .download-button .action .button {
       display: inline-block;
       position: relative;
       width: 160px;
@@ -76,22 +76,22 @@ section.download {
       transition-property: background-color;
       transition-timing-function: ease-in-out;
       transition-duration: .35s; }
-      section.download .action .button:hover {
+      .download-button .action .button:hover {
         background-color: #ffaa22; }
-      section.download .action .button:active {
+      .download-button .action .button:active {
         background-color: #d44d11; }
-      section.download .action .button .fa {
+      .download-button .action .button .fa {
         position: absolute;
         left: 12px;
         top: 6px;
         font-size: 28px;
         width: 28px;
         height: 28px; }
-      section.download .action .button .title {
+      .download-button .action .button .title {
         margin-top: 10px;
         margin-left: 32px;
         letter-spacing: 3px; }
-    section.download .action .hint {
+    .download-button .action .hint {
       color: #aaa;
       font-size: .9em; }
 

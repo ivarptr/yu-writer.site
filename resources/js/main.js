@@ -2,7 +2,7 @@
 
 (function() {
 
-	var maskElement = document.querySelector('.mask');
+	//var maskElement = document.querySelector('.mask');
 	var fullscreen = false;
 	var fullscreenElement = null;
 
@@ -163,7 +163,7 @@
         var thumbElements = Array.prototype.slice.call(thumbElementList, 0);
 
         for (var idx in thumbElements) {
-			let thumbElement = thumbElements[idx];
+			var thumbElement = thumbElements[idx];
 
             thumbElement.addEventListener('click', function(event) {
                 thumbClick(event.currentTarget, event);
