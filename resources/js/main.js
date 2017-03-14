@@ -121,10 +121,12 @@
 			imageHeight /= 2;
 		}
 
-		var zoomX = imageWidth / elementWidth;
-		var zoomY = imageHeight / elementHeight;
+		var zoomX = Math.min(windowWidth, imageWidth) / elementWidth;
+		var zoomY = Math.min(windowHeight, imageHeight) / elementHeight;
 
 		var zoom = Math.min(zoomX, zoomY);
+
+		console.log(zoom);
 
 		var left = (windowWidth - elementWidth) / 2;
 		var top = (windowHeight - elementHeight) / 2;
