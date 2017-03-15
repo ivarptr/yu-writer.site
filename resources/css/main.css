@@ -202,17 +202,17 @@ a {
 
 .gallery.animate .galleryimg {
   animation-name: jump;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out; }
   .gallery.animate .galleryimg.img1of4 {
-    animation-delay: 1.75s; }
-  .gallery.animate .galleryimg.img2of4 {
-    animation-delay: 1.5s; }
-  .gallery.animate .galleryimg.img3of4 {
-    animation-delay: 1.25s; }
-  .gallery.animate .galleryimg.img4of4 {
     animation-delay: 1s; }
+  .gallery.animate .galleryimg.img2of4 {
+    animation-delay: .75s; }
+  .gallery.animate .galleryimg.img3of4 {
+    animation-delay: .5s; }
+  .gallery.animate .galleryimg.img4of4 {
+    animation-delay: .25s; }
 
 .heading {
   padding: 0 16px;

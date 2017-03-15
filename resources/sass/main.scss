@@ -379,24 +379,24 @@ a {
 	&.animate {
 		.galleryimg {
 			animation-name: jump;
-			animation-duration: 4s;
+			animation-duration: 3s;
 			animation-iteration-count: infinite;
 			animation-timing-function: ease-in-out;
 
 			&.img1of4 {
-				animation-delay: 1.75s;
+				animation-delay: 1s;
 			}
 
 			&.img2of4 {
-				animation-delay: 1.5s;
+				animation-delay: .75s;
 			}
 
 			&.img3of4 {
-				animation-delay: 1.25s;
+				animation-delay: .5s;
 			}
 
 			&.img4of4 {
-				animation-delay: 1s;
+				animation-delay: .25s;
 			}
 		}
 	}

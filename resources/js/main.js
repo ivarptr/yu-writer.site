@@ -126,8 +126,6 @@
 
 		var zoom = Math.min(zoomX, zoomY);
 
-		console.log(zoom);
-
 		var left = (windowWidth - elementWidth) / 2;
 		var top = (windowHeight - elementHeight) / 2;
 
@@ -141,9 +139,14 @@
 
 		//maskElement.style.display = 'block';
 		element.parentNode.classList.remove('animate');
-		element.classList.add('fullscreen');
-		element.style.zIndex = 99;
-		element.style.transform = transform;
+
+		setTimeout(function(){
+			element.classList.add('fullscreen');
+			element.style.zIndex = 99;
+			element.style.transform = transform;
+
+		}, 25);
+		
 
 		if (!hd) {
 			var dot = src.indexOf('.png');
@@ -162,18 +165,30 @@
         var thumbElementList = document.querySelectorAll('.screenshot img.large');
         var thumbElements = Array.prototype.slice.call(thumbElementList, 0);
 
+		var transitionend = function(thumbElement) {
+			if (!thumbElement.parentNode.classList.contains('animate')){
+				if (!thumbElement.classList.contains('fullscreen')) {
+					thumbElement.style.zIndex = '';
+
+					if (thumbElement.parentNode.classList.contains('gallery')) {
+						thumbElement.parentNode.classList.add('animate');
+					}
+					
+				}
+			}
+		};
+
         for (var idx in thumbElements) {
 			var thumbElement = thumbElements[idx];
 
             thumbElement.addEventListener('click', function(event) {
-                thumbClick(event.currentTarget, event);
+				let element = event.currentTarget;
+                thumbClick(element, event);
             });
 
-			thumbElement.addEventListener('transitionend', function() {
-				if (!thumbElement.classList.contains('fullscreen')) {
-					thumbElement.style.zIndex = '';
-					thumbElement.parentNode.classList.add('animate');
-				}
+			thumbElement.addEventListener('transitionend', function(event) {
+				let element = event.currentTarget;
+				transitionend(element);
 			});
         }
 
