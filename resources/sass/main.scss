@@ -374,6 +374,7 @@ a {
 
 	.content {
 		h2 {
+			text-transform: uppercase;
 			text-align: center;
 			font-size: 2em;
 			margin-bottom: 16px;
@@ -502,6 +503,7 @@ table {
         color: $secondFontColor;
 
 		li {
+			line-height: 1.6em;
 			margin-bottom: 16px;
 		}
        
@@ -576,7 +578,7 @@ table {
 		margin-top: 64px;
 		margin-left: 16px;
 
-        color: #aaa;
+        color: $secondFontColor;
 
 		p {
 			margin-bottom: 24px;
