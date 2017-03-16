@@ -475,7 +475,7 @@ table {
 
 	table {
 		.platform {
-			width: 50%;
+			width: 40%;
 			position: relative;
 
             .fa {
@@ -515,8 +515,17 @@ table {
 		}
 
 		.file {
-			width: 50%;
+			width: 20%;
 			text-align: center;
+		}
+
+		.alt {
+			width: 20%;
+			text-align: center;
+		}
+
+		.note {
+			width: 20%;
 		}
 	}
 

@@ -263,7 +263,7 @@ table {
     margin-left: auto;
     margin-right: auto; }
   .download-list table .platform {
-    width: 50%;
+    width: 40%;
     position: relative; }
     .download-list table .platform .fa {
       display: block;
@@ -289,8 +289,13 @@ table {
       width: 20px;
       height: 20px; }
   .download-list table .file {
-    width: 50%;
+    width: 20%;
     text-align: center; }
+  .download-list table .alt {
+    width: 20%;
+    text-align: center; }
+  .download-list table .note {
+    width: 20%; }
   .download-list .notice {
     margin-top: 64px;
     margin-left: 16px;
