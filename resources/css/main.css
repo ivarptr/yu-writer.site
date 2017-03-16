@@ -218,6 +218,7 @@ a {
   padding: 0 16px;
   margin-bottom: 88px; }
   .heading .content h2 {
+    text-transform: uppercase;
     text-align: center;
     font-size: 2em;
     margin-bottom: 16px;
@@ -301,6 +302,7 @@ table {
     margin-left: 16px;
     color: #aaa; }
     .download-list .notice li {
+      line-height: 1.6em;
       margin-bottom: 16px; }
 
 .note-list {
