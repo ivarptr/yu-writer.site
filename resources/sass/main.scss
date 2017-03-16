@@ -5,6 +5,7 @@ $defaultFontFamily: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino
 
 $defaultFontSize: 16px;
 $defaultFontColor: #666;
+$secondFontColor: #aaa;
 $defaultBackgroundColor: #fff;
 $titleColor: #ffaa22;
 $subTitleColor: #ee662a;
@@ -110,23 +111,6 @@ a {
     padding: 0 16px;
     margin-bottom: 88px;
 
-    // .content {
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     margin-bottom: 48px;
-
-    //     max-width: 960px;
-    //     line-height: 1.8;
-    //     color: #999;
-    //     // font-weight: 200;
-    //     font-size: 1.1em;
-
-    //     a {
-    //         color: #999;
-    //         text-decoration: underline;
-    //     }
-    // }
-
     .action {
         text-align: center;
 
@@ -171,9 +155,8 @@ a {
         }
 
         .hint {
-            color: #aaa;
+            color: $secondFontColor;
             font-size: .9em;
-            // font-weight: 200;
         }
     }
 
@@ -250,8 +233,7 @@ a {
                 font-size: 2em;
                 margin-bottom: 16px;
                 font-weight: 200;
-                color: #ffaa22;
-                // font-family: 'Raleway', $defaultFontFamily;
+                color: $titleColor;
             }
 
 			.detail {
@@ -259,25 +241,6 @@ a {
 				font-weight: 300;
 				line-height: 2em;
 			}
-
-            // p {
-            //     // font-weight: 200;
-            //     margin-bottom: 12px;
-            // }
-
-            // ul {
-            //     list-style-type: none;
-
-            //     li {
-            //         // font-weight: 200;
-            //         margin-bottom: 12px;
-            //         color: #999;
-
-            //         strong {
-            //             color: $defaultFontColor;
-            //         }
-            //     }
-            // }
         }
     }
 
@@ -415,7 +378,7 @@ a {
 			font-size: 2em;
 			margin-bottom: 16px;
 			font-weight: 200;
-			color: #ffaa22;
+			color: $titleColor;
 		}
 	}
 }
@@ -471,7 +434,7 @@ table {
     margin-bottom: 88px;
 
 	.content {
-		max-width: 750px;
+		max-width: 760px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -536,7 +499,7 @@ table {
 		margin-top: 64px;
 		margin-left: 16px;
 
-        color: #aaa;
+        color: $secondFontColor;
 
 		li {
 			margin-bottom: 16px;
@@ -545,13 +508,66 @@ table {
     }
 }
 
+.note-list {
+
+	padding: 0 16px;
+    margin-bottom: 88px;
+
+	.content {
+		max-width: 760px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.section {
+		margin-bottom: 32px;
+		position: relative;
+
+		h3 {
+			font-size: 1.5em;
+			font-weight: 200;
+			color: $titleColor;
+			border-bottom: 1px solid $subTitleColor;
+			padding: 8px 4px;
+			margin-bottom: 24px;
+		}
+
+		.date {
+			position: absolute;
+			top: 16px;
+			right: 0;
+			color: $secondFontColor;
+			font-size: .9em;
+		}
+
+		.note {
+			font-size: 1.1em;
+			font-weight: 200;
+			margin-bottom: 24px;
+			line-height: 1.6em;
+		}
+
+		ul {
+			margin-left: 16px;
+
+			li {
+				color: $secondFontColor;
+				margin-bottom: 8px;
+				line-height: 1.6em;
+			}
+		}
+	}
+
+}
+
+
 .about {
 
 	padding: 0 16px;
     margin-bottom: 88px;
 
 	.content {
-		max-width: 750px;
+		max-width: 760px;
 		margin-left: auto;
 		margin-right: auto;
 	}

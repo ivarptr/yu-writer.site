@@ -259,7 +259,7 @@ table {
   padding: 0 16px;
   margin-bottom: 88px; }
   .download-list .content {
-    max-width: 750px;
+    max-width: 760px;
     margin-left: auto;
     margin-right: auto; }
   .download-list table .platform {
@@ -303,11 +303,46 @@ table {
     .download-list .notice li {
       margin-bottom: 16px; }
 
+.note-list {
+  padding: 0 16px;
+  margin-bottom: 88px; }
+  .note-list .content {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto; }
+  .note-list .section {
+    margin-bottom: 32px;
+    position: relative; }
+    .note-list .section h3 {
+      font-size: 1.5em;
+      font-weight: 200;
+      color: #ffaa22;
+      border-bottom: 1px solid #ee662a;
+      padding: 8px 4px;
+      margin-bottom: 24px; }
+    .note-list .section .date {
+      position: absolute;
+      top: 16px;
+      right: 0;
+      color: #aaa;
+      font-size: .9em; }
+    .note-list .section .note {
+      font-size: 1.1em;
+      font-weight: 200;
+      margin-bottom: 24px;
+      line-height: 1.6em; }
+    .note-list .section ul {
+      margin-left: 16px; }
+      .note-list .section ul li {
+        color: #aaa;
+        margin-bottom: 8px;
+        line-height: 1.6em; }
+
 .about {
   padding: 0 16px;
   margin-bottom: 88px; }
   .about .content {
-    max-width: 750px;
+    max-width: 760px;
     margin-left: auto;
     margin-right: auto; }
   .about .message {
