@@ -51,6 +51,11 @@ a {
     letter-spacing: 3px;
     margin-bottom: 24px;
     font-weight: 400; }
+    .header h1 a {
+      color: #fff;
+      text-decoration: none; }
+      .header h1 a:hover {
+        text-decoration: underline; }
   .header h2 {
     font-size: 2em;
     margin-bottom: 8px;
@@ -69,7 +74,7 @@ a {
       position: relative;
       width: 160px;
       height: 40px;
-      margin-bottom: 32px;
+      margin-bottom: 12px;
       border-radius: 4px;
       background-color: #ee662a;
       color: #fff;
@@ -91,7 +96,10 @@ a {
         margin-top: 10px;
         margin-left: 32px;
         letter-spacing: 3px; }
-    .download-button .action .hint {
+    .download-button .action .version {
+      margin-bottom: 8px;
+      font-size: .8em; }
+    .download-button .action .platform {
       color: #aaa;
       font-size: .9em; }
 

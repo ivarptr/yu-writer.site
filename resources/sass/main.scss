@@ -92,6 +92,15 @@ a {
         margin-bottom: 24px;
         font-weight: 400;
         // font-family: 'Raleway', $defaultFontFamily;
+		
+		a {
+			color: $defaultBackgroundColor;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
     }
 
     h2 {
@@ -119,7 +128,7 @@ a {
             position: relative;
             width: 160px;
             height: 40px;
-            margin-bottom: 32px;
+            margin-bottom: 12px;
             border-radius: 4px;
             background-color: $subTitleColor;
             color: $defaultBackgroundColor;
@@ -154,7 +163,12 @@ a {
             }
         }
 
-        .hint {
+		.version {
+			margin-bottom: 8px;
+			font-size: .8em;
+		}
+
+        .platform {
             color: $secondFontColor;
             font-size: .9em;
         }
