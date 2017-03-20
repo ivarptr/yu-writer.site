@@ -248,8 +248,10 @@ a {
   text-align: center;
   font-weight: 300;
   margin-bottom: 64px; }
-  .notes li {
-    margin-bottom: 6px; }
+  .notes ul {
+    list-style-type: none; }
+    .notes ul li {
+      margin-bottom: 6px; }
 
 table {
   margin-top: 32px;
