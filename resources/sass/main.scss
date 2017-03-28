@@ -409,7 +409,7 @@ a {
 	background-color: rgba(0,0,0,.2);
 }
 
-.notes {
+.footnotes {
 	font-size: .9em;
 	color: $secondFontColor;
 	text-align: center;
@@ -471,6 +471,8 @@ table {
 	}
 
 	table {
+		margin-bottom: 64px;
+
 		.platform {
 			width: 40%;
 			position: relative;
@@ -526,21 +528,48 @@ table {
 		}
 	}
 
+	.section {
+		margin-bottom: 48px;
+		position: relative;
+
+		h3 {
+			font-size: 1.5em;
+			font-weight: 200;
+			color: $titleColor;
+			border-bottom: 1px solid $titleColor;
+			padding: 8px 4px;
+			margin-bottom: 24px;
+		}
+
+		.version {
+			position: absolute;
+			top: 16px;
+			right: 0;
+			color: $secondFontColor;
+			font-size: .9em;
+		}
+	}
+
     .notice {
-		margin-top: 64px;
 		margin-left: 16px;
+		margin-bottom: 24px;
 
         color: $secondFontColor;
+		// font-weight: 300;
 
 		li {
 			line-height: 1.6em;
-			margin-bottom: 16px;
+			margin-bottom: 8px;
 		}
-       
     }
+
+	.see-also {
+		text-align: right;
+		font-size: .8em;
+	}
 }
 
-.note-list {
+.release-notes {
 
 	padding: 0 16px;
     margin-bottom: 88px;
@@ -559,7 +588,7 @@ table {
 			font-size: 1.5em;
 			font-weight: 200;
 			color: $titleColor;
-			border-bottom: 1px solid $subTitleColor;
+			border-bottom: 1px solid $titleColor;
 			padding: 8px 4px;
 			margin-bottom: 24px;
 		}

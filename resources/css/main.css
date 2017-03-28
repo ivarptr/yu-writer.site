@@ -242,15 +242,15 @@ a {
   top: 0;
   background-color: rgba(0, 0, 0, 0.2); }
 
-.notes {
+.footnotes {
   font-size: .9em;
   color: #aaa;
   text-align: center;
   font-weight: 300;
   margin-bottom: 64px; }
-  .notes ul {
+  .footnotes ul {
     list-style-type: none; }
-    .notes ul li {
+    .footnotes ul li {
       margin-bottom: 6px; }
 
 table {
@@ -282,79 +282,100 @@ table {
     max-width: 760px;
     margin-left: auto;
     margin-right: auto; }
-  .download-list table .platform {
-    width: 40%;
-    position: relative; }
-    .download-list table .platform .fa {
-      display: block;
-      position: absolute;
-      left: 22px;
-      top: 8px;
-      font-size: 20px;
-      text-align: center;
-      width: 20px;
-      height: 20px; }
-    .download-list table .platform .name {
-      margin-left: 42px;
-      margin-top: 10px;
-      font-size: 14px;
+  .download-list table {
+    margin-bottom: 64px; }
+    .download-list table .platform {
+      width: 40%;
+      position: relative; }
+      .download-list table .platform .fa {
+        display: block;
+        position: absolute;
+        left: 22px;
+        top: 8px;
+        font-size: 20px;
+        text-align: center;
+        width: 20px;
+        height: 20px; }
+      .download-list table .platform .name {
+        margin-left: 42px;
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: center; }
+      .download-list table .platform.windows .fa {
+        font-size: 18px; }
+      .download-list table .platform.rasberrypi img {
+        display: block;
+        position: absolute;
+        left: 21px;
+        top: 8px;
+        width: 20px;
+        height: 20px; }
+    .download-list table .file {
+      width: 20%;
       text-align: center; }
-    .download-list table .platform.windows .fa {
-      font-size: 18px; }
-    .download-list table .platform.rasberrypi img {
-      display: block;
-      position: absolute;
-      left: 21px;
-      top: 8px;
-      width: 20px;
-      height: 20px; }
-  .download-list table .file {
-    width: 20%;
-    text-align: center; }
-  .download-list table .alt {
-    width: 20%;
-    text-align: center; }
-  .download-list table .note {
-    width: 20%; }
-  .download-list .notice {
-    margin-top: 64px;
-    margin-left: 16px;
-    color: #aaa; }
-    .download-list .notice li {
-      line-height: 1.6em;
-      margin-bottom: 16px; }
-
-.note-list {
-  padding: 0 16px;
-  margin-bottom: 88px; }
-  .note-list .content {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto; }
-  .note-list .section {
-    margin-bottom: 32px;
+    .download-list table .alt {
+      width: 20%;
+      text-align: center; }
+    .download-list table .note {
+      width: 20%; }
+  .download-list .section {
+    margin-bottom: 48px;
     position: relative; }
-    .note-list .section h3 {
+    .download-list .section h3 {
       font-size: 1.5em;
       font-weight: 200;
       color: #ffaa22;
-      border-bottom: 1px solid #ee662a;
+      border-bottom: 1px solid #ffaa22;
       padding: 8px 4px;
       margin-bottom: 24px; }
-    .note-list .section .date {
+    .download-list .section .version {
       position: absolute;
       top: 16px;
       right: 0;
       color: #aaa;
       font-size: .9em; }
-    .note-list .section .note {
+  .download-list .notice {
+    margin-left: 16px;
+    margin-bottom: 24px;
+    color: #aaa; }
+    .download-list .notice li {
+      line-height: 1.6em;
+      margin-bottom: 8px; }
+  .download-list .see-also {
+    text-align: right;
+    font-size: .8em; }
+
+.release-notes {
+  padding: 0 16px;
+  margin-bottom: 88px; }
+  .release-notes .content {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto; }
+  .release-notes .section {
+    margin-bottom: 32px;
+    position: relative; }
+    .release-notes .section h3 {
+      font-size: 1.5em;
+      font-weight: 200;
+      color: #ffaa22;
+      border-bottom: 1px solid #ffaa22;
+      padding: 8px 4px;
+      margin-bottom: 24px; }
+    .release-notes .section .date {
+      position: absolute;
+      top: 16px;
+      right: 0;
+      color: #aaa;
+      font-size: .9em; }
+    .release-notes .section .note {
       font-size: 1.1em;
       font-weight: 200;
       margin-bottom: 24px;
       line-height: 1.6em; }
-    .note-list .section ul {
+    .release-notes .section ul {
       margin-left: 16px; }
-      .note-list .section ul li {
+      .release-notes .section ul li {
         color: #aaa;
         margin-bottom: 8px;
         line-height: 1.6em; }
