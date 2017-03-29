@@ -14,7 +14,8 @@ body {
   background-color: #fff; }
 
 a {
-  color: #55ccee; }
+  color: #55ccee;
+  text-decoration: none; }
 
 .header {
   background-color: #ffaa22;
