@@ -284,7 +284,7 @@ table {
     margin-left: auto;
     margin-right: auto; }
   .download-list table {
-    margin-bottom: 64px; }
+    margin-bottom: 32px; }
     .download-list table .platform {
       width: 40%;
       position: relative; }
@@ -319,6 +319,10 @@ table {
       text-align: center; }
     .download-list table .note {
       width: 20%; }
+  .download-list .alt {
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: .8em; }
   .download-list .section {
     margin-bottom: 48px;
     position: relative; }
