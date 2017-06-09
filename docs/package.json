@@ -1,0 +1,27 @@
+{
+    "name": "yu-writer.site",
+    "version": "1.0.0",
+    "description": "The site for Yu Writer application.",
+    "main": "main.js",
+    "dependencies": {
+        "font-awesome": "^4.6.1"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-sass": "^3.1.0"
+    },
+    "scripts": {
+        "start": "gulp",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ivarptr/yu-writer.site.git"
+    },
+    "author": "",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/ivarptr/yu-writer.site/issues"
+    },
+    "homepage": "https://github.com/ivarptr/yu-writer.site#readme"
+}

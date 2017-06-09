@@ -1,0 +1,7 @@
+#!/bin/bash
+PERCENT=50
+for img in *.png; do
+    filename=${img%.*}
+    convert -resize $PERCENT%x$PERCENT% "$filename.png" "output/$filename.png"
+	cp "$filename.png" "output/$filename@2x.png"
+done

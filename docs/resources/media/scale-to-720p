@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -i "$1" -vf scale=-1:720 -acodec aac -vcodec h264 720p.mp4
