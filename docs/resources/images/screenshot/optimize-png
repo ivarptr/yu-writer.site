@@ -1,0 +1,7 @@
+#!/bin/bash
+# using pngquant or optipng
+for img in output/*.png; do
+    echo "optimizing... $img"
+    filename=${img#*/}
+    pngquant -o optimize/$filename --force --quality=70-80 $img    
+done
