@@ -3,8 +3,10 @@
 		"version": "0.3.1",
 		"url": "https://ivarptr.github.io/yu-writer.site/download.html"
 	},
+	"beta": {
+		"version": "0.4.0"
+	},
 	"standard": {
-		"version": "1.0.0",
-		"url": "https://ivarptr.github.io/yu-writer.site/download.html"
+		"version": "1.0.0"
 	}
 }
