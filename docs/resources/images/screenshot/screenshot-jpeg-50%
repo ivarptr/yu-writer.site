@@ -3,8 +3,7 @@ PERCENT=50
 for img in *.png; do
     filename=${img%.*}
     convert -resize $PERCENT%x$PERCENT% -quality 90 -background white -alpha remove "$filename.png" "output/$filename.jpg"
-	convert -quality 90 -background white -alpha remove "$filename.png" "output/$filename@2x.jpg"
-	
-	#convert -background white -alpha remove -quality 92 -unsharp 0x2 -resize "1280x" "$filename.png" "$filename-1280.jpg"
-	#convert -background white -alpha remove -quality 98 -unsharp 2x0.5+0.7+0 -resize "256x" "$filename.png" "filename-256.jpg"
+    convert -quality 90 -background white -alpha remove "$filename.png" "output/$filename@2x.jpg"
+    #convert -background white -alpha remove -quality 92 -unsharp 0x2 -resize "1280x" "$filename.png" "$filename-1280.jpg"
+    #convert -background white -alpha remove -quality 98 -unsharp 2x0.5+0.7+0 -resize "256x" "$filename.png" "filename-256.jpg"
 done

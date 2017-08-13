@@ -1,0 +1,8 @@
+#!/bin/bash
+PERCENT50=50
+PERCENT25=25
+for img in platform-*.png; do
+    filename=${img%.*}
+    convert -resize $PERCENT25%x$PERCENT25% -quality 82 -background white -alpha remove "$filename.png" "output/$filename.jpg"
+    convert -resize $PERCENT50%x$PERCENT50% -quality 82 -background white -alpha remove "$filename.png" "output/$filename@2x.jpg"
+done
