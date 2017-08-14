@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Yu Writer - Download</title>
+    <title>Yu Writer - Download - 跨平台的 Markdown 文本编辑器</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="resources/css/font-awesome.css" rel="stylesheet">
@@ -11,18 +11,23 @@
 </head>
 
 <body class="">
-    <div class="header">
-        <div class="wall">
-			<a href="index.html">
-				<div class="logo">
-					<span class="y">Y</span>
-					<span class="u">⏝</span>
-				</div>
-			</a>
-        </div>
-        <h1><a href="index.html">Yu Writer</a></h1>
-        <h2>一款能为你找到写作乐趣的文本编辑器</h2>
-    </div>
+	<div class="header">
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="download.html">Download</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</div>
+		<div class="wall">
+			<div class="logo">
+				<span class="y">Y</span>
+				<span class="u">⏝</span>
+			</div>
+		</div>
+		<h1>Yu Writer</h1>
+		<h2>一款能找到写作乐趣的 Markdown 文本编辑器</h2>
+	</div>
 
     <div class="heading">
         <div class="content">
@@ -44,14 +49,14 @@
 					<tr>
 						<td class="platform"><i class="fa fa-linux" aria-hidden="true"></i> 
 							<span class="name">Linux</span></td>
-						<td class="file"></td>
-						<td class="note">2017年8月下旬</td>
+						<td class="file">-</td>
+						<td class="note">预计2017年9月中旬</td>
 					</tr>
 					<tr>
 						<td class="platform"><i class="fa fa-apple" aria-hidden="true"></i> 
 							<span class="name">Mac</span></td>
 						<td class="file">
-							<a href="https://jp.archboy.org/yu-writer/yu-writer-beta-0.4.0-macos.dmg" target="_blank">Download</a>
+							<a href="https://jp.archboy.org/yu-writer/yu-writer-beta-0.4.1-macos.dmg" target="_blank">Beta 0.4.1</a>
 						</td>
 						<td class="note">DMG 格式安装包</td>
 					</tr>
@@ -59,37 +64,36 @@
 						<td class="platform windows"><i class="fa fa-windows" aria-hidden="true"></i> 
 							<span class="name">Windows</span></td>
 						<td class="file">
-							<a href="https://jp.archboy.org/yu-writer/yu-writer-beta-0.4.0-windows.zip" target="_blank">Download</a>
+							<a href="https://jp.archboy.org/yu-writer/yu-writer-beta-0.4.1-windows.zip" target="_blank">Beta 0.4.1</a>
 						</td>
 						<td class="note">绿色免安装版</td>
 					</tr>
 					<tr>
 						<td class="platform rasberrypi"><img src="resources/images/raspberrypi.png"> 
 							<span class="name">Raspberry Pi</span></td>
-						<td class="file"></td>
-						<td class="note">2017年8月下旬</td>
+						<td class="file">-</td>
+						<td class="note">预计2017年9月中旬</td>
 					</tr>
 				</tbody>
 			</table>
         
 			<div class="alt">
-				如果下载遇到问题，可以到 <a href="https://github.com/ivarptr/yu-writer.site/releases" target="_blank">这个后备站点</a> 下载安装包。
+				如果下载遇到问题或者速度过慢，可以到 <a href="https://github.com/ivarptr/yu-writer.site/releases" target="_blank">这个后备站点</a> 下载。
 			</div>
 
 			<div class="section whatsnew">
 				<h3>What's New</h3>
-				<div class="version">version: Beta 0.4.0 / 2017-07-21</div>
+				<div class="version">version: Beta 0.4.1 / 2017-08-15</div>
 				<ul class="notice">
-<li>增加对 Jekyll/GitHub Pages，Hexo，Hugo 等博客项目支持。</li>
-<li>增加对 GitBook 电子书项目的支持。</li>
-<li>增加TOML 格式的文档 FrontMatter 的支持 。</li>
-<li>增加博客和电子书专用的文档模板。</li>
-<li>插入图片窗口支持浏览文档库的图片、支持浏览外部文档的图片。</li>
-<li>增加 Yu Writer for Windows 版。</li>
+<li>Windows 版的工具栏按钮可点击区域放大了，默认主题采用 Windows 10 APP 默认样式，能响应系统的颜色设置。</li>
+<li>对数学公式的完全支持。</li>
+<li>改进了文档的图片列表的界面。</li>
+<li>修复了 macOS 版的错误地输入 Backspace 字符的 BUG。</li>
+<li>应用程序使用了新的打包方式，文件数量减少了几倍，加快了程序的加载速度。</li>
 				</ul>
 				<div class="see-also">
-					所有更新历史记录可以参阅这里：
-					<a href="release-notes.html">Release Notes</a>
+					所有更新记录以及历史版本可以
+					<a href="https://github.com/ivarptr/yu-writer.site/releases" target="_blank">点击这里</a>。
 				</div>
 			</div>
 
@@ -115,7 +119,8 @@
 		<ul class="link">
 			<li><a href="index.html">home</a></li>
 			<li><a href="download.html">download</a></li>
-			<li><a href="https://github.com/ivarptr/yu-writer.site/tree/master/manual/zh-CN" target="blank">manual</a></li>
+			<li><a href="https://github.com/ivarptr/yu-writer.site/releases" target="blank">all releases</a></li>
+			<li><a href="https://github.com/ivarptr/yu-writer.site/issues" target="blank">feedback</a></li>
 			<li><a href="about.html">about</a></li>
 		</ul>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Yu Writer</title>
+    <title>Yu Writer - 跨平台的 Markdown 文本编辑器</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="resources/css/font-awesome.css" rel="stylesheet">
@@ -11,19 +11,61 @@
 </head>
 
 <body class="">
-    <div class="header">
-        <div class="wall">
-			<a href="index.html">
-				<div class="logo">
-					<span class="y">Y</span>
-					<span class="u">⏝</span>
+	<div class="header">
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="download.html">Download</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</div>
+		<div class="wall">
+			<div class="logo">
+				<span class="y">Y</span>
+				<span class="u">⏝</span>
+			</div>
+		</div>
+		<h1>Yu Writer</h1>
+		<h2>一款能找到写作乐趣的 Markdown 文本编辑器</h2>
+		<div class="intro">致力为你营造一个舒适、专注、高效的写作环境</div>
+	</div>
+
+	<!-- <div class="platform-list">
+		<ul>
+			<li>
+				<div class="screenshot">
+					<img class="large" src="resources/images/screenshot/output/platform-macos.jpg">
+				</div> 
+				<div class="title">
+					macOS
 				</div>
-			</a>
-        </div>
-       	<h1><a href="index.html">Yu Writer</a></h1>
-        <h2>一款能为你找到写作乐趣的文本编辑器</h2>
-        <div class="intro">致力为你营造一个舒适、专注、高效的写作环境</div>
-    </div>
+			</li>
+			<li>
+				<div class="screenshot">
+					<img class="large" src="resources/images/screenshot/output/platform-win32.jpg">
+				</div>
+				<div class="title">
+					Windows
+				</div>
+			</li>
+			<li>
+				<div class="screenshot">
+					<img class="" src="resources/images/coming-soon.png">
+				</div>
+				<div class="title">
+					Linux
+				</div>
+			</li>
+			<li>
+				<div class="screenshot">
+					<img class="" src="resources/images/coming-soon.png">
+				</div>
+				<div class="title">
+					ARM Linux
+				</div>
+			</li>
+		</ul>
+	</div> -->
 
     <div class="download-button">
         <div class="content">
@@ -36,11 +78,11 @@
                 </div>
             </a>
 			<div class="version">
-                免费下载 · Yu Writer Beta 0.4.0
-            </div>
-            <div class="platform">
-                支持 Linux, Mac, Windows 等平台以及 Raspberry Pi
-            </div>
+                免费下载 · Yu Writer Beta
+			</div>
+			<div class="platform">
+				支持 Linux, Mac, Windows 等平台以及 Raspberry Pi (ARM Linux)
+			</div>
         </div>
     </div>
 
@@ -54,9 +96,9 @@
         </div>
         <div class="content">
             <div class="frame">
-                <h2>多款主题、可定制的界面</h2>
+                <h2>简洁、可定制的界面</h2>
                 <div class="detail">
-                    不喜欢繁杂的界面？Yu Writer 窗口可以精简到只保留一个编辑框，在简洁的界面之下，蕴藏着丰富的功能。
+						Yu Writer 希望你可以在一个舒适、专注的环境里创作内容，所以在界面上做到尽量的美观、简洁，你可以随时更换主题、隐藏不需要的部分，或者一键进入只有一个编辑框的专注模式。
                 </div>
             </div>
         </div>
@@ -70,7 +112,7 @@
             <div class="frame">
                 <h2>所有文档都在一个地方</h2>
                 <div class="detail">
-                    你的所有创作都在内置的文档库里，再也不用到处寻找文档然后再打开编辑。支持全文搜索、支持 Tag（标签）管理。同时可作为系统默认的 Markdown 和纯文本文件编辑器使用。另外文档库可以建立在 iCloud Drive, Google Drive, OneDrive 和 Dropbox 等云储存的本地文件夹里面，方便在多台设备间同步文档。
+						你的所有创作都在内置的文档库里，再也不用到处寻找文档。文档库支持全文搜索、支持 Tag（标签）管理。除了可以编辑文档库里的文档，也可以作为纯文本和 Markdown 文本编辑器用于编辑本地文档。
                 </div>
             </div>
         </div>
@@ -84,7 +126,7 @@
             <div class="frame">
                 <h2>文档热保存、自动还原工作现场</h2>
                 <div class="detail">
-                    你可以随时打开应用开始写作，也可以随时关闭应用，文档是热保存的，再也不会因为忘记手动保存、误操作或者程序奔溃而丢失数据。每次打开应用时还能自动打开上次编辑时的文档以及还原光标位置，方便继续书写。
+						你可以随时打开应用开始写作，也可以随时关闭应用，文档是热保存的，再也不会因为忘记手动保存、误操作或者程序崩溃而丢失数据。每次打开应用时还能自动打开上次编辑时的文档以及还原光标位置，方便立即进入书写状态。
                 </div>
             </div>
         </div>
@@ -98,7 +140,7 @@
             <div class="frame">
                 <h2>日志式版本记录</h2>
                 <div class="detail">
-					文档的编辑全过程（包括每个文字的录入和删除）都可以记录下来，真正可以做到回滚到历史上任意版本、任意时刻。还支持重播观看创作过程哦！
+						文档的编辑全过程，包括每个文字的录入和删除，都会记录下来，真正可以做到回滚到历史上任意版本、任意时刻。还支持重播观看创作的全过程哦！
                 </div>
             </div>
         </div>
@@ -110,9 +152,9 @@
         </div>
         <div class="content">
             <div class="frame">
-                <h2>导出高质量的 PDF 文档以及多种博客文章格式</h2>
+                <h2>导出 PDF、Docx 等多种文章格式</h2>
                 <div class="detail">
-                   可以把文档导出为 PDF、WordPress 博客的 HTML、Text Bundle、图片等格式，还支持导出为微信公众号文章格式。导出 PDF 时更可选择不同的样式以将文档渲染成不同的风格。
+						可以把文档导出为 PDF、Docx、HTML、Text Bundle、图片等格式，还支持导出为 WordPress 或者微信公众号的文章格式。导出 PDF、Docx 和 HTML 时更有多种样式可以选择，用于将文档渲染成不同的风格。
                 </div>
             </div>
         </div>
@@ -120,18 +162,18 @@
 
     <div class="feature right">
         <div class="screenshot">
-            <img class="large" src="resources/images/screenshot/optimize/export.png">
+            <img class="large" src="resources/images/screenshot/optimize/sync.png">
         </div>
         <div class="content">
             <div class="frame">
-                <h2>内置静态站点和博客生成引擎，轻松创作、方便管理</h2>
+                <h2>博客、电子书、个人知识库一站解决</h2>
                 <div class="detail">
-                   服务端无需安装和配置繁杂的博客程序和数据库软件就可以创建你的站点或者博客。创建、编辑、发布文章都在本应用程序内轻松方便完成，编辑好你的文档，剩余的事情都可以交给 Yu Writer 自动完成，管理本地的文档就是管理你的站点和博客。
+						内置静态博客、ePUB 电子书以及个人知识库（Wiki）生成引擎，创建、编辑、发布文章都在本应用程序内轻松方便完成。同时支持管理 GitHub Pages、Jekyll、Hexo、Hugo、GitBook Toolchain 等项目。
                 </div>
             </div>
         </div>
     </div>
-
+<!-- 
     <div class="feature">
         <div class="screenshot">
             <img class="large" src="resources/images/screenshot/optimize/export.png">
@@ -200,7 +242,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="feature feature-more right">
         <div class="screenshot">
@@ -249,37 +291,12 @@
         </div>
     </div>
 
-	<!--
-	<div class="footnotes">
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
-	-->
-
-    <div class="download-button">
-        <div class="content">
-        </div>
-        <div class="action">
-            <a href="download.html">
-                <div class="button">
-                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-                    <div class="title">Download</div>
-                </div>
-            </a>
-            <div class="version">
-                免费下载 · Yu Writer Beta 0.4.0
-            </div>
-        </div>
-    </div>
-
 	<div class="footer">
 		<ul class="link">
 			<li><a href="index.html">home</a></li>
 			<li><a href="download.html">download</a></li>
-			<li><a href="https://github.com/ivarptr/yu-writer.site/tree/master/manual/zh-CN" target="blank">manual</a></li>
+			<li><a href="https://github.com/ivarptr/yu-writer.site/releases" target="blank">all releases</a></li>
+			<li><a href="https://github.com/ivarptr/yu-writer.site/issues" target="blank">feedback</a></li>
 			<li><a href="about.html">about</a></li>
 		</ul>
 

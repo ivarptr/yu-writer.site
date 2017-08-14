@@ -44,13 +44,46 @@ a {
 .header {
     background-color: $titleColor;
     color: $defaultBackgroundColor;
-    margin-bottom: 48px;
+    margin-bottom: 64px;
     text-align: center;
-    padding: 0 16px 32px;
+	padding: 48px 16px 32px;
+	position: relative;
+
+	.nav {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		ul {
+			padding: 8px;
+			list-style-type: none;
+			display: flex;
+
+			li {
+				float: left;
+				margin-left: 8px;
+				margin-right: 8px;
+
+				a {
+					color: $defaultBackgroundColor;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			&::after {
+				content: ("");
+				display: block;
+				clear: left;
+			}
+		}
+	}
 
     .wall {
         position: relative;
-        padding-top: 36px;
+        // padding-top: 36px;
         padding-bottom: 24px;
 
         .logo {
@@ -87,7 +120,6 @@ a {
         }
     }
 
-
     h1 {
         font-size: 1.5em;
         letter-spacing: 3px;
@@ -116,6 +148,56 @@ a {
         //font-weight: 300;
         color: rgba(255, 255, 255, .75);
     }
+}
+
+.platform-list {
+	margin-bottom: 48px;
+	position: relative;
+	z-index: 1;
+
+	ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+
+		li {
+			float: left;
+			margin-left: 16px;
+			margin-right: 16px;
+
+			.screenshot {
+				max-width: 200px;
+				margin-bottom: 8px;
+				background-color: #f7f7f7;
+
+				img {
+					width: 100%;
+
+					// box-sizing: border-box;
+					// padding: 2px;
+					// border-radius: 2px;
+					// box-shadow: 0 -0.5px #c7c7c7, 0.5px 0 #c1c1c1, 0 0.5px #adadad, -0.5px 0 #c1c1c1, 0 1px 2px rgba(0,0,0,.2);
+
+					&.large {
+						cursor: pointer;
+						transition: transform .5s ease-in-out;
+					}
+				}
+			}
+
+			.title {
+				text-align: center;
+				font-size: .9em;
+				color: $secondFontColor;
+			}
+		}
+
+		&::after {
+			content: ("");
+			display: block;
+			clear: left;
+		}
+	}
 }
 
 .download-button {
@@ -572,7 +654,7 @@ table {
     }
 
 	.see-also {
-		text-align: right;
+		text-align: center;
 		font-size: .8em;
 	}
 }
@@ -628,7 +710,6 @@ table {
 	}
 
 }
-
 
 .about {
 
@@ -730,6 +811,18 @@ table {
     body {
         font-size: 14px;
     }
+
+	.platform-list {
+		ul {
+			flex-wrap: wrap;
+
+			li {
+				.screenshot {
+					max-width: 140px;
+				}
+			}
+		}
+	}
 
     .feature {
         .screenshot {

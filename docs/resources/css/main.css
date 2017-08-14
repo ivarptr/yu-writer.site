@@ -20,12 +20,32 @@ a {
 .header {
   background-color: #ffaa22;
   color: #fff;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
   text-align: center;
-  padding: 0 16px 32px; }
+  padding: 48px 16px 32px;
+  position: relative; }
+  .header .nav {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .header .nav ul {
+      padding: 8px;
+      list-style-type: none;
+      display: flex; }
+      .header .nav ul li {
+        float: left;
+        margin-left: 8px;
+        margin-right: 8px; }
+        .header .nav ul li a {
+          color: #fff; }
+          .header .nav ul li a:hover {
+            text-decoration: underline; }
+      .header .nav ul::after {
+        content: "";
+        display: block;
+        clear: left; }
   .header .wall {
     position: relative;
-    padding-top: 36px;
     padding-bottom: 24px; }
     .header .wall .logo {
       width: 160px;
@@ -64,6 +84,36 @@ a {
   .header .intro {
     font-size: 1.1em;
     color: rgba(255, 255, 255, 0.75); }
+
+.platform-list {
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 1; }
+  .platform-list ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; }
+    .platform-list ul li {
+      float: left;
+      margin-left: 16px;
+      margin-right: 16px; }
+      .platform-list ul li .screenshot {
+        max-width: 200px;
+        margin-bottom: 8px;
+        background-color: #f7f7f7; }
+        .platform-list ul li .screenshot img {
+          width: 100%; }
+          .platform-list ul li .screenshot img.large {
+            cursor: pointer;
+            transition: transform .5s ease-in-out; }
+      .platform-list ul li .title {
+        text-align: center;
+        font-size: .9em;
+        color: #aaa; }
+    .platform-list ul::after {
+      content: "";
+      display: block;
+      clear: left; }
 
 .download-button {
   padding: 0 16px;
@@ -347,7 +397,7 @@ table {
       line-height: 1.6em;
       margin-bottom: 8px; }
   .download-list .see-also {
-    text-align: right;
+    text-align: center;
     font-size: .8em; }
 
 .release-notes {
@@ -443,6 +493,10 @@ table {
     zoom: .8; }
   body {
     font-size: 14px; }
+  .platform-list ul {
+    flex-wrap: wrap; }
+    .platform-list ul li .screenshot {
+      max-width: 140px; }
   .feature .screenshot {
     width: 100%;
     float: none;
