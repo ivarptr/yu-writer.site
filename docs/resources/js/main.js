@@ -149,7 +149,7 @@
 		
 
 		if (!hd) {
-			var dot = src.indexOf('.png');
+			var dot = src.lastIndexOf('.');
 			var hdSrc = src.substring(0, dot) + '@2x' + src.substring(dot);
 			var hdImage = new Image();
 			hdImage.addEventListener('load', function(){
