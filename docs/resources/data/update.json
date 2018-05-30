@@ -8,5 +8,32 @@
 	},
 	"standard": {
 		"version": "1.0.0"
+	},
+
+	"comment": {
+		"item": "legacy above"
+	},
+
+	"Standard": {
+		"Develop": {
+			"version": "0.5.0"	
+		},
+		"Beta" : {
+			"version": "0.5.0"
+		}, 
+		"Stable" : {
+			"version": "0.5.0"
+		}
+	},
+	"Pro": {
+		"Develop": {
+			"version": "0.5.0"	
+		},
+		"Beta" : {
+			"version": "0.5.0"
+		}, 
+		"Stable" : {
+			"version": "0.5.0"
+		}
 	}
 }

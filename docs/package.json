@@ -4,11 +4,11 @@
     "description": "The site for Yu Writer application.",
     "main": "main.js",
     "dependencies": {
-        "font-awesome": "^4.6.1"
+        "font-awesome": "^4.7.0"
     },
     "devDependencies": {
         "gulp": "^3.9.1",
-        "gulp-sass": "^3.1.0"
+        "gulp-sass": "4.0.1"
     },
     "scripts": {
         "start": "gulp",
