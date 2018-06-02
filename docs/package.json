@@ -7,8 +7,8 @@
         "font-awesome": "^4.7.0"
     },
     "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-sass": "4.0.1"
+        "gulp": "^4.0.0",
+        "gulp-sass": "^4.0.1"
     },
     "scripts": {
         "start": "gulp",
