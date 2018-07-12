@@ -1,10 +1,10 @@
 {
 	"alpha": {
-		"version": "0.3.2",
+		"version": "0.5.2",
 		"url": "https://ivarptr.github.io/yu-writer.site/download.html"
 	},
 	"beta": {
-		"version": "0.4.4"
+		"version": "0.5.2"
 	},
 	"standard": {
 		"version": "1.0.0"
@@ -30,7 +30,7 @@
 			"version": "0.5.0"	
 		},
 		"Beta" : {
-			"version": "0.5.1"
+			"version": "0.5.2"
 		}, 
 		"Stable" : {
 			"version": "0.5.0"
