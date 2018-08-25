@@ -29,14 +29,16 @@ a {
       left: 16px;
       top: 16px;
       border-style: none;
-      width: 32px; }
+      width: 32px;
+      height: 32px;
+      opacity: .9; }
     .header .logo h1 {
       font-size: 1.2em;
       line-height: 32px;
       letter-spacing: 1px;
       margin-left: 40px;
       font-weight: 500;
-      color: rgba(255, 255, 255, 0.8); }
+      color: rgba(255, 255, 255, 0.9); }
   .header .intro {
     padding-left: 32px;
     padding-right: 32px;
