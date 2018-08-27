@@ -119,13 +119,13 @@ a {
 
 	ul {
 		list-style-type: none;
-		text-align: center;
-		width: 300px;
+		// text-align: center;
+		width: 440px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
 		
-		margin-bottom: 64px;
+		margin-bottom: 32px;
 
 		li {
 			margin-bottom: 8px;
@@ -146,6 +146,11 @@ a {
 
 	.alt {
 		text-align: center;
+		width: 360px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 16px;
+		border-top: 1px solid $titleColor;
 
 		a {
 			text-decoration: underline;

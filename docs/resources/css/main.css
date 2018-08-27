@@ -70,12 +70,11 @@ a {
     text-transform: uppercase; }
   .downloads ul {
     list-style-type: none;
-    text-align: center;
-    width: 300px;
+    width: 440px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 64px; }
+    margin-bottom: 32px; }
     .downloads ul li {
       margin-bottom: 8px; }
       .downloads ul li .name {
@@ -87,7 +86,12 @@ a {
         color: #ffaa22;
         text-decoration: underline; }
   .downloads .alt {
-    text-align: center; }
+    text-align: center;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    border-top: 1px solid #ffaa22; }
     .downloads .alt a {
       text-decoration: underline; }
 
