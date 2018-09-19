@@ -16,7 +16,6 @@
 		"item": "lagacy before 0.4.4"
 	},
 
-	
 	"Pro": {
 		"Beta" : {
 			"version": "0.5.3"
@@ -28,20 +27,26 @@
 	},
 
 	"win32": {
-		"Beta" : {
-			"version": "0.5.3"
+		"Pro": {
+			"Beta" : {
+				"version": "0.5.3"
+			}
 		}
 	},
-
+	
 	"darwin": {
-		"Beta" : {
-			"version": "0.5.3"
+		"Pro": {
+			"Beta" : {
+				"version": "0.5.3"
+			}
 		}
 	},
 
 	"linux": {
-		"Beta" : {
-			"version": "0.5.4"
+		"Pro": {
+			"Beta" : {
+				"version": "0.5.4"
+			}
 		}
 	}
 }
