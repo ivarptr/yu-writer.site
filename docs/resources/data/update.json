@@ -1,39 +1,47 @@
 {
 	"alpha": {
-		"version": "0.5.3",
+		"version": "0.3.2",
 		"url": "https://ivarptr.github.io/yu-writer.site/download.html"
 	},
+	
+	"comment1": {
+		"item": "lagacy before 0.3.1"
+	},
+
 	"beta": {
-		"version": "0.5.3"
-	},
-	"standard": {
-		"version": "1.0.0"
+		"version": "0.4.5"
 	},
 
-	"comment": {
-		"item": "legacy above"
+	"comment2": {
+		"item": "lagacy before 0.4.4"
 	},
 
-	"Standard": {
-		"Develop": {
-			"version": "0.5.3"	
-		},
+	
+	"Pro": {
 		"Beta" : {
-			"version": "0.5.3"
-		}, 
-		"Stable" : {
 			"version": "0.5.3"
 		}
 	},
-	"Pro": {
-		"Develop": {
-			"version": "0.5.3"	
-		},
+
+	"comment3": {
+		"item": "lagacy before 0.5.3"
+	},
+
+	"win32": {
 		"Beta" : {
 			"version": "0.5.3"
-		}, 
-		"Stable" : {
+		}
+	},
+
+	"darwin": {
+		"Beta" : {
 			"version": "0.5.3"
+		}
+	},
+
+	"linux": {
+		"Beta" : {
+			"version": "0.5.4"
 		}
 	}
 }
