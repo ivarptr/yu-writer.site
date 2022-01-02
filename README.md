@@ -1,4 +1,3 @@
 # Yu Writer Site
 
-Check out:
-https://hemashushu.github.io/yu-writer.site/
+This repository will not be updated for a while.
